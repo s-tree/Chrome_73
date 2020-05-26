@@ -149,6 +149,7 @@ by a child template that "extends" this file.
              (shown in Android's Settings/Apps list) share the same label, we
              do not specify one here to allow it to inherit from the app. -->
         <activity android:name="org.chromium.chrome.browser.document.ChromeLauncherActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/LauncherTheme"
             android:relinquishTaskIdentity="true"
             android:taskAffinity=""
@@ -276,6 +277,7 @@ by a child template that "extends" this file.
         </activity-alias>
 
         <activity android:name="org.chromium.chrome.browser.media.MediaLauncherActivity"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -293,6 +295,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity android:name="org.chromium.chrome.browser.LauncherShortcutActivity"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:taskAffinity=""
             android:excludeFromRecents="true"
@@ -301,6 +304,7 @@ by a child template that "extends" this file.
         <!-- Upgrade related -->
         <activity android:name="org.chromium.chrome.browser.upgrade.UpgradeActivity"
             android:excludeFromRecents="true"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:windowSoftInputMode="adjustResize"
             android:taskAffinity=""
@@ -330,6 +334,7 @@ by a child template that "extends" this file.
         <!-- Document mode Activities. -->
         <activity android:name="org.chromium.chrome.browser.document.DocumentActivity"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:taskAffinity=""
             android:persistableMode="persistAcrossReboots"
@@ -346,6 +351,7 @@ by a child template that "extends" this file.
         <activity android:name="org.chromium.chrome.browser.document.IncognitoDocumentActivity"
             android:icon="@mipmap/incognito_app_icon"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:theme="@style/IncognitoTheme"
             android:taskAffinity=""
             android:persistableMode="persistNever"
@@ -362,6 +368,7 @@ by a child template that "extends" this file.
 
         <!-- Custom Tabs -->
         <activity android:name="org.chromium.chrome.browser.customtabs.CustomTabActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:exported="false"
                         android:windowSoftInputMode="adjustResize"
@@ -381,6 +388,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.customtabs.PaymentHandlerActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/TranslucentMainTheme"
             android:exported="false"
                         android:windowSoftInputMode="adjustResize"
@@ -405,6 +413,7 @@ by a child template that "extends" this file.
              TODO(arthursonzogni, tedchoc): Enabled this only on Android < 21 after M74.
         -->
         <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:exported="false"
             android:taskAffinity=""
@@ -427,7 +436,8 @@ by a child template that "extends" this file.
             
         </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity0"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -450,7 +460,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity1"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -473,7 +484,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity2"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -496,7 +508,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity3"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -519,7 +532,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity4"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -542,7 +556,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity5"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -565,7 +580,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity6"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -588,7 +604,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity7"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -611,7 +628,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity8"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -634,7 +652,8 @@ by a child template that "extends" this file.
                 
             </activity>
             <activity android:name="org.chromium.chrome.browser.customtabs.SeparateTaskCustomTabActivity9"
-                android:theme="@style/MainTheme"
+                android:screenOrientation="landscape"
+            android:theme="@style/MainTheme"
                 android:icon="@mipmap/app_single_page_icon"
                 android:exported="false"
                 android:launchMode="singleTask"
@@ -658,12 +677,14 @@ by a child template that "extends" this file.
             </activity>
 
         <activity android:name="org.chromium.chrome.browser.incognito.IncognitoDisclosureActivity"
-          android:theme="@style/FullscreenTransparentActivityTheme"
+          android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTransparentActivityTheme"
           android:exported="false">
         </activity>
 
         <!-- ChromeTabbedActivity related -->
         <activity android:name="org.chromium.chrome.browser.ChromeTabbedActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/TabbedModeTheme"
             android:exported="true"
             android:launchMode="singleTask"
@@ -706,6 +727,7 @@ by a child template that "extends" this file.
 
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.ChromeTabbedActivity2"
+            android:screenOrientation="landscape"
             android:theme="@style/TabbedModeTheme"
             android:exported="false"
             android:taskAffinity="org.chromium.chrome.ChromeTabbedActivity2"
@@ -727,6 +749,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.multiwindow.MultiInstanceChromeTabbedActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/TabbedModeTheme"
             android:exported="false"
                         android:windowSoftInputMode="adjustResize"
@@ -736,6 +759,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.touchless.NoTouchActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:exported="false"
             android:launchMode="singleTask"
@@ -750,10 +774,12 @@ by a child template that "extends" this file.
         </activity>
 
         <activity android:name="org.chromium.chrome.browser.sync.ui.PassphraseActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:autoRemoveFromRecents="true">
         </activity>
         <activity android:name="org.chromium.chrome.browser.firstrun.LightweightFirstRunActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/SimpleDialog"
                         android:label="@string/fre_activity_label"
             android:launchMode="singleInstance"
@@ -764,6 +790,7 @@ by a child template that "extends" this file.
 >
         </activity>
         <activity android:name="org.chromium.chrome.browser.firstrun.FirstRunActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FirstRunTheme"
             android:label="@string/fre_activity_label"
             android:launchMode="singleInstance"
@@ -774,6 +801,7 @@ by a child template that "extends" this file.
 >
         </activity>
         <activity android:name="org.chromium.chrome.browser.firstrun.TabbedModeFirstRunActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/TabbedModeFirstRunTheme"
                         android:label="@string/fre_activity_label"
             android:launchMode="singleInstance"
@@ -786,6 +814,7 @@ by a child template that "extends" this file.
         <activity android:name="org.chromium.chrome.browser.vr.VrFirstRunActivity"
             android:exported="false"
             android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
             android:theme="@style/VrActivityTheme"
             android:excludeFromRecents="true"
             android:enableVrMode="@string/gvr_vr_mode_component"
@@ -798,33 +827,39 @@ by a child template that "extends" this file.
 
         </activity>
         <activity android:name="org.chromium.chrome.browser.signin.AccountSigninActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
         <activity android:name="org.chromium.chrome.browser.signin.SigninActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:exported="false">
         </activity>
         <activity android:name="org.chromium.chrome.browser.preferences.Preferences"
+            android:screenOrientation="landscape"
             android:theme="@style/PreferencesTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:label="@string/preferences"
             android:exported="false">
         </activity>
         <activity android:name="org.chromium.chrome.browser.preferences.website.ManageSpaceActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/ManageSpaceTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:label="@string/storage_management_activity_label"
             android:exported="false">
         </activity>
         <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenWhiteActivityTheme"
             android:exported="false"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
         <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkAddActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:windowSoftInputMode="stateHidden"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
@@ -834,6 +869,7 @@ by a child template that "extends" this file.
             </intent-filter>
         </activity>
         <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkEditActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:windowSoftInputMode="stateHidden"
             android:exported="false"
@@ -841,11 +877,13 @@ by a child template that "extends" this file.
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
         <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkAddEditFolderActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:exported="false"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
         <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkFolderSelectActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/DialogWhenLarge"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:label="@string/bookmark_choose_folder"
@@ -855,6 +893,7 @@ by a child template that "extends" this file.
 
         <!-- Activities for downloads. -->
         <activity android:name="org.chromium.chrome.browser.download.DownloadActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenWhiteActivityTheme"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
@@ -863,6 +902,7 @@ by a child template that "extends" this file.
 
         <!-- Activities for history. -->
         <activity android:name="org.chromium.chrome.browser.history.HistoryActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenWhiteActivityTheme"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
@@ -876,6 +916,7 @@ by a child template that "extends" this file.
                                running.
         -->
         <activity android:name="org.chromium.chrome.browser.webapps.WebappLauncherActivity"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:taskAffinity=""
             android:excludeFromRecents="true">
@@ -892,6 +933,7 @@ by a child template that "extends" this file.
             android:targetActivity="org.chromium.chrome.browser.webapps.WebappLauncherActivity">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:label="@string/webapp_activity_title"
             android:launchMode="singleTop"
@@ -922,6 +964,7 @@ by a child template that "extends" this file.
  >
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity0"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -951,6 +994,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity1"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -980,6 +1024,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity2"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1009,6 +1054,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity3"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1038,6 +1084,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity4"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1067,6 +1114,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity5"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1096,6 +1144,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity6"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1125,6 +1174,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity7"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1154,6 +1204,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity8"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1183,6 +1234,7 @@ by a child template that "extends" this file.
             android:label="@string/webapp_activity_title">
         </activity-alias>
         <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity9"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1213,6 +1265,7 @@ by a child template that "extends" this file.
         </activity-alias>
         <!-- Activities for WebAPKs. -->
         <activity android:name="org.chromium.chrome.browser.webapps.SameTaskWebApkActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:label="@string/webapp_activity_title"
             android:exported="false"
@@ -1234,6 +1287,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:label="@string/webapp_activity_title"
             android:launchMode="singleTop"
@@ -1257,6 +1311,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity0"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1281,6 +1336,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity1"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1305,6 +1361,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity2"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1329,6 +1386,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity3"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1353,6 +1411,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity4"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1377,6 +1436,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity5"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1401,6 +1461,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity6"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1425,6 +1486,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity7"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1449,6 +1511,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity8"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1473,6 +1536,7 @@ by a child template that "extends" this file.
             
         </activity>
         <activity android:name="org.chromium.chrome.browser.webapps.WebApkActivity9"
+            android:screenOrientation="landscape"
             android:theme="@style/WebappTheme"
             android:icon="@mipmap/app_shortcut_icon"
             android:label="@string/webapp_activity_title"
@@ -1498,6 +1562,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity android:name="org.chromium.chrome.browser.media.remote.ExpandedControllerActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:label="Chrome.ExpandedControllerActivity"
             android:hardwareAccelerated="true"
@@ -1508,6 +1573,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity android:name="org.chromium.chrome.browser.media.router.caf.remoting.CafExpandedControllerActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/MainTheme"
             android:label="Chrome.CafExpandedControllerActivity"
             android:hardwareAccelerated="true"
@@ -1521,6 +1587,7 @@ by a child template that "extends" this file.
         <activity android:name="org.chromium.chrome.browser.BrowserRestartActivity"
             android:launchMode="singleInstance"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:excludeFromRecents="true"
             android:process=":browser_restart_process">
@@ -1535,6 +1602,7 @@ by a child template that "extends" this file.
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize" >
             <intent-filter>
@@ -1552,6 +1620,7 @@ by a child template that "extends" this file.
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize" >
             <intent-filter>
@@ -1565,6 +1634,7 @@ by a child template that "extends" this file.
         <activity
             android:name="org.chromium.chrome.browser.instantapps.AuthenticatedProxyActivity"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:noHistory="true"
             android:excludeFromRecents="true">
@@ -1573,6 +1643,7 @@ by a child template that "extends" this file.
         <activity
             android:name="org.chromium.chrome.browser.vr.VrCancelAnimationActivity"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoDisplay"
             android:noHistory="true"
             android:excludeFromRecents="true"
@@ -1588,6 +1659,7 @@ by a child template that "extends" this file.
 
         <!-- Activities for Browser Actions -->
         <activity android:name="org.chromium.chrome.browser.browseractions.BrowserActionActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTransparentActivityTheme"
             android:exported="true"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
@@ -1615,11 +1687,13 @@ by a child template that "extends" this file.
 
 
         <activity android:name="org.chromium.chrome.browser.browserservices.ClearDataDialogActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/ClearDataDialogActivityTheme"
             android:exported="false"/>
 
         <activity
             android:name="org.chromium.chrome.browser.browserservices.ManageTrustedWebActivityDataActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTransparentActivityTheme"
             android:exported="true">
             <intent-filter>
@@ -1721,6 +1795,7 @@ by a child template that "extends" this file.
 
         <!-- Search Activity -->
         <activity android:name="org.chromium.chrome.browser.searchwidget.SearchActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/SearchActivityTheme"
             android:label="Search"
             android:exported="false"
